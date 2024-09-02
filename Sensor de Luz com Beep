@@ -1,0 +1,46 @@
+// C++ code
+//gessica vitoria
+
+int led = 3;
+int sensor = A0;
+int valorSensor = 0;
+int beep = 4;
+int portaPotenciometro = A1;
+int valorPotenciometro = 0;
+
+void setup()
+{
+  pinMode(led, OUTPUT);
+  pinMode (beep,OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+ valorSensor = analogRead (sensor);
+  Serial.println (valorSensor);
+  
+  valorPotenciometro = analogRead(portaPotenciometro);
+	Serial.println(valorPotenciometro);
+  
+  if
+    (valorPotenciometro > 700){
+    	digitalWrite(beep,HIGH);
+  }else{
+    digitalWrite(beep, LOW);
+  }
+
+  if(valorSensor < 600) {
+    digitalWrite(led,HIGH);
+    if
+    (valorPotenciometro > 700){
+    	digitalWrite(beep,HIGH);
+    }else{
+    digitalWrite(beep, LOW);
+    }
+  }else{
+    digitalWrite (led,LOW);
+    digitalWrite(beep, LOW);
+  }
+    
+}
