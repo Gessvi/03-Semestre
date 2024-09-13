@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 60%;
+            border-collapse: collapse;
+            border: 1px;
+        }
+        th{
+            background-color: rgb(231, 231, 231);
+
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Perfil do Usuario</h1>
+    <p>Para mais informações, visite o <a href="formulario.html" target="_blank">perfil completo</a></p>
+
+    <h2>Informações Pessoais</h2>
+
+    <table border="1" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Campo</th>
+                <th>Detalhe</th>
+            </tr>
+
+         <tr>
+            <td>Nome</td>
+            <td>João da Silva</td>
+         </tr>
+
+         <tr>
+            <td>Idade</td>
+            <td>30 anos</td>
+         </tr>
+
+         <tr>
+            <td>Ocupação</td>
+            <td>Desenvolvedor Web</td></tr>
+        </thead>
+    </table>
+
+
+    <h2>Projetos Recentes</h2>
+    <p>Aqui estão alguns dos meus projetos recentes:</p>
+    <img src="#" alt="Projeto 1">
+    <img src="#" alt="Projeto 2">
+    <img src="#" alt="Projeto 3">
+
+
+    <h2>Habilidades</h2>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>React</li>
+    </ul>
+
+    <h2>Entre em Contato</h2>
+    <label for="Nome">Seu nome:</label>
+    <br>
+    <input type="text">
+    <br><br>
+    <label for="email">Seu E-mail:</label>
+    <br>
+    <input type="text">
+    <br><br>
+    <label for="Mensagem">Sua Mensagem:</label>
+    <br>
+    <textarea name="mensagem" id="mensagem" rows="5" cols="50"></textarea>
+
+    <br>
+
+    <input type="submit" value="Enviar Mensagem">
+
+</body>
+</html>
