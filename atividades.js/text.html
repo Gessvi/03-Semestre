@@ -5,11 +5,275 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>teste</title>
 </head>
-<body>
-    
-<h1>textes</h1>
-
+<body>  
 <script src="script.js"></script>
+    
+<h1>anotações</h1>
 
+<p>
+
+As variáveis de LET podem ser atualizadas, mas não podem ser declaradas novamente. As variáveis de CONST não podem ser atualizadas nem declaradas novamente (são utilizadas para valores constantes, como o valor de pi, por exemplo).
+
+======== EXPLICAÇÃO NUMEROS ==========
+
+const a = [1,2,3];
+const b = Array.of[1,2,3]
+
+const matriz = [
+    [1,2,3]
+    [4,5,6]
+    [7,8,9]
+]
+    matriz[0][0]//1;
+    matriz[2][0]//7;
+
+    //criação de um array de numeros
+    let numeros = [10,20,30,10];
+
+    //acesso a elementos array
+
+    console.log(numeros[0]);//saida:10
+    console.log(numeros[2]);//saida:30
+
+    //modificando um elemento do array
+    numeros[1]=25;
+    console.log[(numeros)];//saida:[10,20,30,40,50]
+
+=========== ATIVIDADE ===========
+
+const a = [10,20,30,40,50];
+
+console.log(a[4]);
+
+============= EXPLICAÇÃO FRUTAS ===========
+
+let frutas = ["maca", "manga", "banana");
+
+//adicionando um elemento ao final do array
+frutas.push("manga");
+console.log(frutas;//Saida:("maca","banana","manga");
+
+//removendo o ultimo elemento do array
+frutas.pop();
+console.log(frutas);//Saidas:("maca","banana","manga");
+
+//adicionando um elemento ao inixio do array
+frutas.unshift("uva");
+console.log(frutas);//Saidas:("uva","maca","banana","manga");
+
+//Removendo o primeiro elemento do array
+frutas.shift();
+console.log(frutas);("maca","banana","manga");
+
+=========== ATIVIDADE ===============
+
+let frutas = ["maca","banana","laranja"];
+frutas.push("manga");
+console.log(frutas);
+
+frutas.pop();
+console.log(frutas)
+
+frutas.unshift("uva");
+console.log(frutas);
+
+frutas.shift();
+console.log(frutas);
+
+============== EXPLICAÇÃO CORES COM FOR ==============    
+
+LET CORES = ["VERMELHO", "VERDE", "AMARELO"];
+
+//Usando o loop for
+° for (let i = 0; i < cores.length; i++){
+    console.log(corfes[i]);
+}
+//Siadas:
+//vermelho
+//verde
+//amarelo
+============== ATIVIDADE 01 ============
+
+let cores = ["1 - vermelho","2 - verde","3 - amarelo"];
+    for (let i = 0; i < cores.length; i++){
+        console.log(cores[i]);
+    }
+
+    //console forEach
+cores.forEach(function(cor){
+    console.log(cor);
+})
+
+========== ATIVIDADE 02 =========
+
+//Uasando forEach
+
+cores.forEach(function(cor){
+console.log(cor);
+})
+
+========== ATIVIDADE 02 ==========
+
+let cores = ["1 - vermelho","2 - verde","3 - amarelo"];
+    for (let i = 0; i < cores.length; i++){
+        console.log(cores[i]);
+    }
+============= EXPLICAÇÃO PARES =============
+
+let números = [1,2,3,4,5,6]
+
+//filtrando numeros pares
+let pares = numeros.filter(function(numeros);{
+    return numero % 2 === 0;
+});
+
+console.log(pares);//Saida:{2,4,6];
+
+============= ATIVIDADE ============
+
+let numeros = [1,2,3,4,5,6]
+    let pares = numeros.filter(function(numeros) {
+        return numeros % 2 === 0;
+    })
+    
+    console.log(pares);
+
+//com mais números
+
+let numeros = [1,2,3,4,5,6,7,8,9,10,15,20]
+    let pares = numeros.filter(function(numeros) {
+        return numeros % 2 === 0;
+    })
+    
+    console.log(pares);
+
+============= EXPLICAÇÃO MULTIPLICAÇÃO ==================
+
+let números = [1,2,3,4,5]
+
+//multiplicando cada numero por 2
+let dobrados = números.map(function(números){
+    return numero * 2;
+
+});
+
+console.log(dobrados);//Saidas:[1,4,6,8,10]
+
+=============== ATIVIDADE 01 =================
+
+let numeross = [1,2,3,4,5]
+
+let dobrados = numeros.map(function(numeross) {
+    return numeross * 2;
+});
+
+console.log(dobrados);
+
+
+//Usando soma
+
+let numerosss = [1,2,3,4,5]
+
+let dobrados = numerosss.map(function(numerosss) {
+    return numerosss + 2;
+});
+
+============== ATIVIDADE 02 ==============
+
+let numerosss = [1,2,3,4,5]
+
+    let soma = numerosss.map(function(numerosss) {
+        return numerosss + 2;
+    });
+    
+console.log(soma);
+
+=============== EXPLICAÇÃO SOMA TOTAL ============
+let conta = [1,2,3,4,5]
+
+//Somando todos os elementos do array
+let somaa = conta.reduce(function(total,conta){
+    return total+numero;
+},0);
+
+console.log(somaa);//Saida:15
+
+============ ATIVIDADE =============
+
+let conta = [1,2,3,4,5]
+    let somaa = conta.reduce(function (total,conta) {
+        return total+conta;
+    },0);
+
+    console.log(somaa);
+=============== EXPLICAÇÃO REMOVENDO FRUTAS ============
+
+function removerElemento(array,elemento){
+//Usando o método Filter para criar um novo array sem o elemento especifico
+
+return array.filter(function(item){
+    return item !==elemento;
+});
+}
+
+let frutass = ["maca", "banana", "laranja"];
+let resultado = removerElemento(frutass,"laranja");
+console.log(resultado);/Saida:("maca","banana");
+
+================ ATIVIDADE =================
+
+let frutass = ["maca", "banana", "laranja"]
+console.log(frutass)
+
+//removendo
+
+let resultado = removerElemento(frutass,"laranja")
+console.log(resultado)
+
+============== EXPLICAÇÃO NUMERO MAIOR ==============
+
+function maiorNumero(array){
+return array.reduce(function(max,atual){
+return atual > max ? atual : max;
+
+});
+}
+
+let numero = [10,25,35,5,40,20]
+let maior = maiorNumero(numero)
+console.log(maior);//Saida:40
+
+================= ATIVIDADE ===============
+
+function maiorNumero(array) {
+    return array.reduce(function (max,atual) {
+        return atual > max ? atual : max
+    });
+}
+
+let numero = [10,25,35,5,40,20]
+let maior = maiorNumero(numero)
+console.log(maior)
+
+========== EXPLICAÇÃO JUNTAR ARRAY =============
+let array1 = [1,2,3]
+let array2 = [4,5,6]
+
+//Usando o método CONCAT
+let concatenado = array1.concat(array2)
+
+console.log(concatenado);//Saida:[1,2,3,4,5,6]
+
+=============== ATIVIDADE ================
+
+let array1 = [1,2,3]
+let array2 = [4,5,6]
+
+let concatenado = array1.concat(array2)
+console.log(concatenado)
+
+
+</p>
+    
 </body>
 </html>
