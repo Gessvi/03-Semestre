@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 02</title>
+</head>
+<style>
+    p{
+        padding: 20px;
+    }
+</style>
+<body>
+    <script src="resposta02.js"></script>
+
+<h1>ANOTAÇÕES</h1>
+
+<P>
+
+     ========== EXPLICAÇÃO TODOS SÃO PARES ==========
+
+FUNCTION todosSaoPares(ARRAY){
+RETURN ARRAY.EVERY(FUNCTION(NUMERoO){
+RETURN NUMEROO % 2 === 0;
+});
+}
+
+let númeroo = [2,4,6,8];
+console.log(todosSaoPares(númeroo));//Saida:true
+
+numeroo = [2,4,5,8]
+console.log(todosSaoPares(númeroo));Saida:false
+
+     =========== ATIVIDADES ===========
+//TRUE
+
+let numeroo = [2,4,5,8]
+console.log(todosSaoPares(numeroo))
+
+//FALSE
+let numeroo = [2,4,5,8]
+console.log(todosSaoPares(numeroo))
+
+     ========== EXPLICAÇÃO SOMA PAR ============
+
+function somaPares(array){
+return array.filter(function(nume)
+return numero % 2 ===0;//Filtrar apenas os números pares
+})
+.reduce(function(soma,numero){
+return soma + números;//Soma os números pares
+},0);
+}
+
+let números = [1,2,3,4,5,6]
+let resultado = somaPares(números);
+console.log(resultado);//Saida: 12
+
+      ========= ATIVIDADE ===========
+
+function somaPares(array){
+    return array
+        .filter(function(numero){
+            return numero % 2 === 0;
+    })
+    .reduce(function (soma,numero) {
+        return soma + numero
+    },0)
+}
+</P>
+
+<p>
+let nume = [1,2,4,5,6]
+let resultadoo = somaPares(nume)
+console.log(resultadoo)
+
+       =========== EXPLICAÇÃO MEDIA ========
+
+function calcularMedia(array){
+let soma = array.reduce(function(total,numero){
+return total + numero
+},0)
+return soma/array.length
+}
+
+let numero = [5,10,15,20,25]
+let media = calcularMedia(numero)
+console.log(media);//Saida:15
+
+        ============ ATIVIDADE ==============
+
+function calcularMedia(array) {
+    let soma = array.reduce(function (total,numero) {
+        return total + numero
+    },0)
+    return soma/array.length
+}
+
+let numero = [5,10,15,20,25]
+let media = calcularMedia(numero)
+console.log(media)
+
+        =============== EXPLICAÇÃO VERIFICAR SE ARRAY TEM ELEMENTO ==============
+
+function contemElemento(array,elemento){
+return array.includes(elemento)
+}
+
+let frutas ("maca","banana","laranja")
+console.log(contemElemento(frutas,"banana"));//Saida:true
+console.log(contemElemento(frutas,"uva"));//Saida:false
+
+        ============== ATIVIDADE =======
+
+
+function contemElemento(array,elemento) {
+    return array.includes(elemento)
+}
+
+let frutas = ["maca","banana","laranja"]
+console.log(contemElemento(frutas,"banana"))
+console.log(contemElemento(frutas,"uva"))
+
+        =========== EXPLICAÇÃO ORDEM CRESCENTE ===============
+
+function ordenarCrescente(array){
+return array.sort(function(a,b){
+return a - b
+})
+}
+
+let números = [5,3,8,1,2]
+let ordenado = ordenarCrescente(números)
+console.log(ordenado);//Saida:[1,2,3,4,5,6]
+
+        ================ ATIVIDADE ==================
+
+function ordenarCrescente(array) {
+    return array.sort(function (a,b) {
+        return a - b
+        
+    })
+}
+    
+let numeros = [5,3,8,1,2]
+let ordenado = ordenarCrescente(numeros)
+console.log(ordenado)
+
+</p>
+
+<p>
+
+        ============= EXPLICAÇÃO MULTIPLICAÇÃO ============
+
+function multiplicarPor(array,multiplicar){
+return array.map(function(numero){
+return numero * multiplicar
+})
+}
+
+let numero = [1,2,3,4]
+let resultado = multiplicarPor(numero,3)
+console.log(resultado);//Saida:[3,6,9,12]
+
+        ============= ATIVIDADE ===========
+
+function multiplicarPor(array,multiplicar) {
+    return array.map(function (numero) {
+        return numero * multiplicar
+    })
+}
+
+let numer = [1,2,3,4]
+let resultado = multiplicarPor(numer,3)
+console.log(resultado)
+
+        =============== EXPLICAÇÃO CONTAR REPETIÇÃO DE NUMEROS =============
+
+function contarOcorrencias(array,elemento){
+return array.reduce(function(contador,valorAtual){
+return valorAtual === elemento ? contador + 1 : contador
+},0)
+}
+
+let números = [1,2,3,1,4,1,5]
+let ocorrências = contarOcorrencias(números,1)
+console.log(ocorencias);//Saidas:3]
+
+        ============ ATIVIDADES =============
+
+function contarOcorrencias(array,elemento) {
+    return array.reduce(function (contador,valorAtual) {
+        return valorAtual === elemento ? contador + 1 : contador
+    },0)
+}
+
+let numers = [1,2,3,1,5,1,4]
+let ocorrencias = contarOcorrencias(numers,1)
+console.log(ocorrencias)
+
+        ============= EXPLICAÇÃO mesclar dois arrays e remover duplicadas =============
+
+function mesclarEremoverDuplicatas(array1,array2){
+let mesclado = array1.concat(array2);//Mesclar os dois arrays
+return[...new Set(mesclado)];//Remove duplicatas usando Set
+}
+
+let array1 = [1,2,3]
+let array2 = [3,4,5]
+let resultado = mesclarEremoverDuplicatas(array1,array2)
+console.log(resultado)//Saida:[1,2,3,4,5]
+
+        ============== ATIVIDADE ================
+    </p>
+
+    <p>
+function mesclarEremoverDuplicatas(array1,array2) {
+    let mesclado = array1.concat(array2)
+    return [...new Set(mesclado)]
+}
+
+let array1 = [1,2,3]
+let array2 = [3,4,5]
+let resultad = mesclarEremoverDuplicatas(array1,array2)
+console.log(resultad)
+
+        ============== EXPLICAÇÃO ORDEM DECRESCENTE ===============
+
+function inverterArray(array){
+return array.reverse()
+}
+
+let numero = [1,2,3,4,5]
+let invertido = inverterArray(numero)
+console.log(invertido);//Saida:[5,4,3,2,1]
+
+        =========== ATIVIDADE ============
+
+function inverterArray(array) {
+    return array.reverse()
+}
+
+let numerr = [1,2,3,4,5]
+let invertido = inverterArray(numerr)
+console.log(invertido)
+
+        ============= EXPLICAÇÃO REMOVER FALSOS VALORES =============
+
+function removerFalsosValores(array){
+return array.filter(Boolean);//Filtrar apenas os valores"verdadeiros"
+}
+
+let valores = [0,"maca","",false,"banana",null,"laranja")
+let resultado = removerFalsosValores(valores)
+console.log(resultado);//Saida:["maca","banana","laranja"]
+
+        =========== ATIVIDADE =============
+
+let numerr = [1,2,3,4,5]
+let invertido = inverterArray(numerr)
+console.log(invertido)
+
+function removerFalsosValores(array){
+    return array.filter(Boolean)   
+}
+
+let valores = [0,"maca","",false,"banana",null,"laranja"]
+let resulta = removerFalsosValores(valores)
+console.log(resulta)
+
+</p>
+
+<p>
+        ============== EXPLICAÇÃO AGRUPAR PARES =============
+
+function agruparEmPares(array){
+for (let i = 0; i < array.length; i +=2){
+resultado.push([array[i],array[i+1]])
+}
+
+return resultado;
+}
+
+let números = [1,2,3,4,5,6]
+let pares = agruparEmPares[numeros]
+console.log(pares);//Saida:[[1,2],[3,4],[5,6]]
+
+        ============== ATIVIDADE ============
+
+function agruparEmPares(array) {
+    let resulta = []
+    for (let i = 0; i < array.length; i+=2) {
+        resulta.push([array[i],array[i+1]])
+    }
+    return resulta;
+}
+    let numeroo = [1,2,3,4,5,6]
+    let pares = agruparEmPares(numeroo)
+    console.log(pares)
+
+        ================= EXPLICAÇÃO WHILE DE 1 A 10 (SOMA) ==============
+
+let num = 1 		// Inicializar a variável com o valor 1
+let soma = 0		 // inicializar a variavel soma com o valor 0
+  while (num <= 10) {	 // continua o laço enquanto o 'numero' for menor ou igual a 10
+    soma += num 	// adicionando o valor'numero' á variavel 'soma'
+      num++	 // incrementar o valor de 'numero' em 1
+ }
+    console.log("A soma de 1a 10 é:", soma)	 // Exibir o resultado final
+
+        ================== ATIVIDADE ================
+
+  let num = 1
+    let soma = 0
+    while (num <= 10) {
+        soma += num
+        num++
+    }
+    console.log("A soma de 1a 10 é:", soma)
+
+        ============== EXPLICAÇÃO WHILE DE 1 A 20 (APENAS PARES) ===============
+ 
+
+    let numm = 1
+    
+    while (numm <= 20) {
+        if (numm % 2 === 0) {	//Verificar se o numero é par
+            console.log(numm)
+        }
+        numm++	//Incrementando o valor de 'numero' em  1
+    }
+
+        ============= ATIVIDADE ============
+
+        let somaa = 0
+        let nuum
+    
+        while (nuum !== 0) {
+            nuum = parseInt(prompt("Digite um numero(0 para sair):"))
+            somaa += nuum
+        }
+    
+    console.log("A soma total é:", somaa)
+    
+    </p>
+
+</body>
+</html>
