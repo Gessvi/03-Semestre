@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Seja Bem-Vindo!!</h1>
+    </header>
+
+   <main class="formulario">
+    <form action="salvar_dados.php" method="post">
+
+
+        <p class="paragrafo">Os preços estão do seu agrado?Se sim nos diga o quanto esta saisfeito.</p>
+        <input type="range"><br>
+    
+        <p class="paragrafo">Caso não esteja satisfeito, digite sua opinião.</p>
+        <input type="text" value="Digite aqui..."><br>
+    
+        <p class="paragrafo">Gostaria de fazer o Cartao da Loja?</p>
+        <input type="checkbox">Sim
+        <input type="checkbox">Não
+    
+        <p class="paragrafo">Aceitar os Termos de Contrato</p>
+        <input type="radio" Radio Button><br>
+        
+        <div>
+            <p class="paragrafo">Está satisfeita com o nosso atendimento?</p>
+            <input type="text" value="Digite aqui...">
+        </div>
+        <div>
+            <p class="paragrafo">Quais produtos você deseja encontrar na loda?</p>
+            <input type="text" value="Digite aqui...">
+        </div>
+        <div>
+            <p class="paragrafo">Qual melhora seria necessario para a loja?</p>
+            <input type="text" value="Digite aqui...">
+        </div>
+        <div> 
+            <p class="paragrafo">Quais <span style=background:#f7dcc4; border-radius:5px; padding:5px;>Marcas Famosas</span> você deseja encontrar na loja daqui pra frente?</p>
+            <input type="text" value="Digite aqui...">
+        </div>
+
+        <input type="submit" value="Enviar" class="enviar">
+        
+   </main>
+
+   <script>
+    alert("Preencha o formulario corretamente")
+</script>
+
+</form>
+</body>
+</html>
