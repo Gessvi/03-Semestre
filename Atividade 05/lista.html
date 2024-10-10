@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        input{
+            border-radius: 10px;
+            padding: 7px;
+
+        }
+        button{
+            border-radius: 10px;
+            padding: 8px;
+            margin: 10px;
+            background-color: brown;
+            color: aliceblue;
+        }
+        button:hover{
+            background-color: azure;
+            color: black;
+        }
+        li{
+            color: rgb(161, 23, 23);
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Permite o Usuario a Adicionar itens a uma lista</h3>
+    <p>Quando o botão é clicado um novo elemento LI é criado e adicionando a lista UL </p>
+    <p>APPENCHILD é usado para anexar o novo item a lista</p>
+    <input type="text" id="itemInput" placeholder="Adicionar aqui...">
+    <button id="Adicionar">Adicionar Item</button>
+    <ul id="lista"></ul>
+
+
+    
+
+    <script>
+        document.getElementById('Adicionar').addEventListener('click',function () {
+            const itemInput = document.getElementById('itemInput')
+            const novoItem = document.createElement('li')
+            novoItem.innerText = itemInput.value
+            document.getElementById('lista').appendChild(novoItem)
+            itemInput.value=""//Limpar o campo de entrada
+        })
+    </script>
+
+
+</body>
+</html>
