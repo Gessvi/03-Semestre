@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocultar</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        input{
+            border-radius: 10px;
+            padding: 7px;
+
+        }
+        button{
+            border-radius: 10px;
+            padding: 8px;
+            margin: 10px;
+            background-color: brown;
+            color: aliceblue;
+        }
+        button:hover{
+            background-color: azure;
+            color: black;
+        }
+        li{
+            color: rgb(161, 23, 23);
+        }
+        main{
+            background-color: aliceblue;
+            width: 50%;
+            height: 50%;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3>Mostrar e Ocultar um elemento</h3>
+    <p>O botão altera a exibição de um paragrafo de texto</p>
+    <p>O estilo do paragrafo é alterado entre 'None' e 'Block'</p>
+
+
+    <p>A verificação condicional permite alterar a visibilidade</p>
+    <button id="togger">Mostrar</button>
+
+<main>
+    <p id="texto" style="display: none;">Este é um texto oculto</p>
+</main>
+    
+<script src="js.js"></script>
+
+</body>
+</html>
